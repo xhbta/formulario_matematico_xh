@@ -11,16 +11,17 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String lenguajeProgramacion[]=new String[]{"Cálculo","Trigonometria","Unidades","Tema 4","Tema 5","Tema 6"};
+    private String lenguajeProgramacion[]=new String[]{"Cálculo","Trigonometria","Unidades","Areas y Perimetros","Tema 5","Tema 6"};
 
     private Integer[] imgid={
             R.drawable.java,
             R.drawable.php,
             R.drawable.python,
-            R.drawable.javascript,
+            R.drawable.perimetro,
             R.drawable.ruby,
             R.drawable.c
     };
@@ -43,16 +44,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         TemasListAdapter adapter=new TemasListAdapter(this,lenguajeProgramacion,imgid);
         lista=(ListView)findViewById(R.id.mi_lista);
         lista.setAdapter(adapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 String Slecteditem = lenguajeProgramacion[+position];
                 Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
+                Intent intent = null;
+                if (Slecteditem == "Areas y Perimetros") {
+                    //codigo para abrir un activity con intent
+                    intent = new Intent(getApplicationContext(), areasperimetros.class);
+                    startActivity(intent);
+
+                }
             }
+
         });
+
     }
 
     @Override

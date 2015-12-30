@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Formulariomatematico.iml" filepath="$PROJECT_DIR$/Formulariomatematico.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/formulario_matematico_xh.iml" filepath="$PROJECT_DIR$/formulario_matematico_xh.iml" />
     </modules>
   </component>
 </project>

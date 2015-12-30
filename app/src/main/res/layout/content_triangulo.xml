@@ -10,4 +10,72 @@
     tools:showIn="@layout/activity_triangulo"
     tools:context="com.jbta.formulariomatematico.triangulo">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Triángulo"
+        android:id="@+id/Triangulo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/triangulo"
+        android:layout_below="@+id/Triangulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AREA"
+        android:id="@+id/textView6"
+        android:textSize="20dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toLeftOf="@+id/Triangulo"
+        android:layout_toStartOf="@+id/Triangulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PERIMETRO"
+        android:id="@+id/textView7"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P = L + L + L "
+        android:id="@+id/textView8"
+        android:layout_marginTop="41dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:textIsSelectable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/areatriangulo"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

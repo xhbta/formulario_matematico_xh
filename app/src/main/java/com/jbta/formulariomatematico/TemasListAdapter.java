@@ -29,7 +29,7 @@ public class TemasListAdapter extends ArrayAdapter<String> {
         this.integers=integers;
     }
 
-    public View getView(int posicion,View view, ViewGroup parent){
+    public View getView(int posicion,View view, ViewGroup parent ){
 
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.fila_lista,null,true);
@@ -40,7 +40,7 @@ public class TemasListAdapter extends ArrayAdapter<String> {
 
         txtTitle.setText(itemname[posicion]);
         imageView.setImageResource(integers[posicion]);
-        etxDescripcion.setText("Description "+itemname[posicion]);
+        etxDescripcion.setText(itemname[posicion]);
 
         return rowView;
     }

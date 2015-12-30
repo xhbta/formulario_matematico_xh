@@ -10,4 +10,10 @@
     tools:showIn="@layout/activity_areasperimetros"
     tools:context="com.jbta.formulariomatematico.areasperimetros">
 
+    <ListView
+        android:id="@+id/mi_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
 </RelativeLayout>

@@ -1,23 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jbta.formulariomatematico" >
+    package="com.jbta.formulariomatematico">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".areasperimetros"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".cuadrado"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".triangulo"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rectangulo"
+            android:label="@string/title_activity_rectangulo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".circulo"
+            android:label="@string/title_activity_circulo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".trapecio"
+            android:label="@string/title_activity_trapecio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rombo"
+            android:label="@string/title_activity_rombo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".romboide"
+            android:label="@string/title_activity_romboide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".poligono"
+            android:label="@string/title_activity_poligono"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
